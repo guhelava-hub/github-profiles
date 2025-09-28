@@ -29,7 +29,7 @@ function createUserCard(user) {
                 <img class="avatar" src="${user.avatar_url}" alt="${user.name}" />
             </div>
             <div class="user-info">
-                <h2>${user.name}</h2>
+                <h2>${user.name ? user.name : user.login}</h2>
                 <p>${user.bio ? user.bio : "Bio not avaiable"}</p>
 
                 <ul class="info">
